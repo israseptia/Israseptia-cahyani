@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Robby Tan">
+    <meta name="description" content="Table with Datatable">
+    <title>Data Tabel</title>
+    <link rel="stylesheet" href="implementasi.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"/>
+ 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <h2 id="logo"><img src="https://2.bp.blogspot.com/-zNX1r4KIqJI/Um8XypnzJqI/AAAAAAAADLc/VVmWz6iFOQY/s1600/Logo-Gerakan-Pramuka-Indonesia-Transparent-Background.png" alt="" width="80px">
+            <br> Isra Septia Cahyani <br> F55121060 <br></h2> 
+            <br>
+            <a href="HOME.html">Home</a> <br>
+            <a href="Untitled-1.html">Formulir</a> <br>
+            <a href="implementasi.html">Data tabel</a> <br>
+            <a href="index.html">log Out</a> <br>
+        </div>
+    
+    <header></header>
+    <nav></nav>
+    <main>
+        <table id="tabelSaya" class="display">
+            <thead> 
+                <tr>
+                    <th>Email</th>
+                    <th>Nama lengkap</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>No Telepon</th>
+                    <th>Tujuan masuk pramuka</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dimas@gmail.com</td>
+                    <td>Dimas aldi</td>
+                    <td>06/11/2000</td>
+                    <td>Pria</td>
+                    <td>082326336165</td>
+                    <td>Menambah wawasan</td>
+                </tr>
+                <tr>
+                    <td>isra@gmail.com</td>
+                    <td>Isra Septia</td>
+                    <td>09/25/2003</td>
+                    <td>Wanita</td>
+                    <td>082326336775</td>
+                    <td>Menambah pengetahuan</td>
+                </tr>
+                <tr>
+                    <td>iskafiani@gmail.com</td>
+                    <td>Iskafiani</td>
+                    <td>09/25/2008</td>
+                    <td>Wanita</td>
+                    <td>082326336199</td>
+                    <td>Menambah wawasan dan pengalaman</td>
+                </tr>
+                <tr>
+                    <td>nirwani@gmail.com</td>
+                    <td>Nirwani</td>
+                    <td>01/18/1999</td>
+                    <td>Wanita</td>
+                    <td>082326336889</td>
+                    <td>Menambah softskill</td>
+                </tr>
+                <tr>
+                    <td>nirwana@gmail.com</td>
+                    <td>Nirwana</td>
+                    <td>01/19/2008</td>
+                    <td>Wanita</td>
+                    <td>082326336122</td>
+                    <td>Menambah wawasan dan pengetahuan</td>
+                </tr>
+                <tr>
+                    <td>arfandi@gmail.com</td>
+                    <td>Arfandi</td>
+                    <td>10/03/2000</td>
+                    <td>Pria</td>
+                    <td>082326336178</td>
+                    <td>Memperluas wawasan</td>
+                </tr>
+                <tr>
+                    <td>irfandi@gmail.com</td>
+                    <td>Irfandi</td>
+                    <td>10/03/2000</td>
+                    <td>Pria</td>
+                    <td>082327736178</td>
+                    <td>Menambah softskill</td>
+                </tr>
+                <tr>
+                    <td>sella@gmail.com</td>
+                    <td>Sella</td>
+                    <td>06/06/2009</td>
+                    <td>Wanita</td>
+                    <td>082326338878</td>
+                    <td>Melatih mental</td>
+                </tr>
+                <tr>
+                    <td>ilham@gmail.com</td>
+                    <td>Ilham</td>
+                    <td>01/017/2017</td>
+                    <td>Pria</td>
+                    <td>082326336178</td>
+                    <td>Memperluas wawasan</td>
+                </tr>
+                <tr>
+                    <td>zahra@gmail.com</td>
+                    <td>Zahra</td>
+                    <td>10/03/2006</td>
+                    <td>Wanita</td>
+                    <td>082326336499</td>
+                    <td>Menambah pengalaman</td>
+                </tr>
+                <tr>
+                    <td>alif@gmail.com</td>
+                    <td>Alif</td>
+                    <td>01/027/2003</td>
+                    <td>Pria</td>
+                    <td>082326334556</td>
+                    <td>Memperluas wawasan</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer></footer>
+    <script>
+        $(document).ready(function() {
+            $("#tabelSaya").DataTable();
+        });
+    </script>
+    </div>
+</body>
+</html>

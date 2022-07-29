@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title> Formulir </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link href="form.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Untitled-1.css">
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="menu">
+                <h2 id="logo"><img src="https://2.bp.blogspot.com/-zNX1r4KIqJI/Um8XypnzJqI/AAAAAAAADLc/VVmWz6iFOQY/s1600/Logo-Gerakan-Pramuka-Indonesia-Transparent-Background.png" alt="" width="80px">
+                    <br> Isra Septia Cahyani <br> F55121060 <br></h2> 
+                <br>
+                <a href="HOME.html">Home</a> <br>
+                <a href="Untitled-1.html">Formulir</a> <br>
+                <a href="implementasi.html">Data tabel</a> <br>
+                <a href="Log Out.html">log Out</a> <br>
+            </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <form action="#">
+            <div class="tabel">
+                <div class="data-header">
+                    <h1> Formulir Pendaftaran </h1> 
+                    <p> (*)harus wajib diisi </p> <br>
+                </div><br>
+    
+                <div class="data data-text">
+                    <label> Email* :</label>
+                    <input type="text" placeholder="Masukkan Nama Lengkap" id="nama">
+                </div><br>
+    
+                <div class="data-text data">
+                    <label> Nama* :</label>
+                    <input type="text" placeholder="Masukkan NIM" id="stambuk"> 
+                </div><br>
+    
+                <div class="data-date data">
+                    <label> Tanggal Lahir :</label><br>
+                    <input type="date">
+                </div><br>
+    
+                <div class=" data">
+                    <label> Jenis Kelamin* :</label><br>
+                    <input type="radio" name="JenisKel" value="Pria" /> Pria
+                    <input type="radio" name="JenisKel" value="Wanita" /> Wanita
+                </div><br>
+                
+                <div class="data-text data">
+                    <label> No Telepon : </label>
+                    <input type="text" placeholder="Masukkan Nomor" id="nomor"> 
+                </div><br>
+
+                <div class="data-text data">
+                    <label> Tujuan Masuk Pramuka* : </label>
+                    <input type="text" placeholder="Masukkan tujuan anda" id="tujuan"> 
+                </div><br>
+                
+                <div class="data data-submit"> 
+                    <input type="submit" class="kirim" onclick="sweetalert()" value="Kirim"> </input>
+                    <input type="reset" name="Reset" /><br>
+                    <!-- <button class="button"> 
+                        <a href="HOME.html"></a> 
+                    </button> -->
+                </div>
+            </div>
+        </form>
+
+        <script>
+            function sweetalert() {
+                var nama = document.querySelector('#nama').value
+                console.log(nama)
+
+                var nim = document.querySelector('#stambuk').value
+                console.log(stambuk)
+
+                if (nama != "" && nim != "") {
+                    swal("Berhasil", "Data terisi", "success");
+                } else {
+                    swal("Data Anda kosong", "wajib mengisi data *", "warning");
+                }
+            }
+        </script>
+    </body>
+
+</html>

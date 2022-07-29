@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="Login.css">
+    </head>
+
+    <body>
+        <div class="box">
+            <form>
+                <h2>Login</h2>
+            Username:
+            <input type="text" id="Username" name="username" />
+            <br>
+            Password:
+            <input type="password" id="Password" name="password" />
+            <br> 
+            </form>
+            <input type="submit" value="Login" onclick="check()">
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>
+        function check(){   
+            var Username =document.getElementById("Username").value;
+            var Password =document.getElementById("Password").value;
+
+            if(Username =="" || Password ==""){
+                swal("Maaf", "Data Tidak Boleh Kosong!", "error");
+        } else {
+          swal({
+            title: "Yey!",
+            text: "Berhasil Login!",
+            icon: "success",
+
+          }).then((lanjut) => {
+            if (lanjut) {
+              window.location.href = "HOME.html";
+            }
+          });
+            }
+        }
+        </script>
+    </body>
+</html>
